@@ -1,8 +1,52 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>
+         A journey through my trials!
+      </title>
+      <link rel="stylesheet" href="styles.css">
    </head>
-   <body>
-      <!-- Write your HTML in this file! -->
+   <body class="background">
+      <header>
+         <h1 class="center">This is my first webpage</h1>
+         <h2 class="center">By: Me</h2>
+      </header>
+      <main class="container">
+         <article>
+            <section>
+               <p>At first I thought about doing something simple like making a page about my life. It seemed like the easiest thing to do with the current assignment. My ending thoughts for that idea came through the fact that my life is pretty specific. Don't get me wrong I have lots of stories, but most of them aren't very relatable to people.</p>
+               <img class="width" src="src/cats/cute-photos-of-cats-curled-up-sleeping-1593184773.jpg" alt="Cat one">
+            </section>
+            <section>
+               <p>So I decided to make this page more ranndom than following stories about my past. I came up with the idea that this page would be about the current assignment. I'd explain my thought process on why I chose what I did while simultaneously completing the assigment.</p>
+               <img class="width" src="src/cats/cute-photos-of-cats-in-grass-1593184777.jpg" alt="grass cats">
+            </section>
+            <section>
+               <p>This assignemnt was actually quite fun to work on. It was strange at first to realize what was possible with just a small amount of code. Using the attributes already in HTML and CSS to manipulate the page however I wanted. I could use custom images, resize them, and then adjust there screen positioning all in a few lines of code.</p>
+               <img onmouseout="catClosed(this)" onmouseover="catOpen(this)" src="src/cats/meme-pop-cat-closed.png" class="height">
+               <p>This assigment has changed my perspective on coding. It didn't seem as simple when I first looked into it, but now I realize it has been made to allow you to minimmize the size of your code to even an extreme extent. All you need is the understanding and willingness to dig for the answer.</p>
+            </section>
+            <section class="row">
+               <div class="column">
+                  <p id="vert-center">As for the cats, they are just here to be fun to look at(and maybe play with?). Nothing super special about why I picked them.</p>
+               </div>
+               <div class="column">
+                  <img class="height" src="src/cats/GettyImages-145679137-scaled-e1619025176434.jpg" alt="Closed cat mouth">
+                  
+               </div>
+            </section>
+         </article>
+      </main>
+      <footer>
+         <h3>Ohh yeah and I need one of these &reg;</h3>
+      </footer>
+      <script>
+         function catOpen(x) {
+            x.src="src/cats/meme-pop-cat-open.png"
+         }
+         function catClosed(x) {
+            x.src="src/cats/meme-pop-cat-closed.png"
+         }
+      </script>
    </body>
 </html>
